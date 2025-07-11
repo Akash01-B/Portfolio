@@ -269,7 +269,7 @@ img {
 
 /* ABOUT SECTION */
 .about_text{
-  justify-content: center;
+  justify-content: justify;
   margin-left: 2cm;
   margin-right: 2cm;
 }
@@ -339,22 +339,23 @@ img {
   z-index: var(--z-back);
 }
 
-.skill_html {
+.skill_angular {
+  
   width: 95%;
 }
 
-.skill_css {
+.skill_net {
   width: 85%;
 }
 
-.skill_js {
+.skill_cs {
   width: 75%;
 }
 
-.skill_python {
+.skill_azure {
   width: 80%;
 }
-.skill_java{
+.skill_python{
   width: 85%;
 }
 .skill_sql{
@@ -374,7 +375,7 @@ img {
   margin-left: 5cm;
 }
 .work {
-  text-align: center;
+  text-align: left;
 }
 
 .work_container {
@@ -545,3 +546,137 @@ img {
     right: 10%;
   }
 }
+
+.experience_card {
+  background: #f9f9f9;
+  padding: 1.5rem 2rem;
+  border-radius: 20px;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+.experience_card:hover {
+  transform: scale(1.02);
+}
+.experience_header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.experience_header i {
+  font-size: 2rem;
+  color: #6c63ff;
+}
+.experience_role {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.experience_company {
+  font-size: 1rem;
+  color: #444;
+}
+.experience_duration {
+  font-size: 0.9rem;
+  color: #888;
+}
+.experience_content ul {
+  padding-left: 1.2rem;
+  list-style: none;
+}
+.experience_content ul li {
+  position: relative;
+  padding-left: 1.2rem;
+  margin-bottom: 0.6rem;
+}
+.experience_content ul li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: #6c63ff;
+  font-weight: bold;
+}
+.tech_used {
+  margin-top: 0.8rem;
+  font-style: italic;
+  color: #333;
+}
+.experience_list li {
+  text-indent: -1.4rem;
+  padding-left: 1.4rem;
+  margin-bottom: 0.8rem;
+  line-height: 1.6;
+}
+.experience_list {
+  list-style: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.experience_list li {
+  position: relative;
+  padding-left: 2.2rem; /* Creates space before the text */
+  margin-bottom: 0.8rem;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.experience_list li::before {
+  content: "•"; /* default bullet */
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #6c63ff; /* Optional: your theme color */
+  font-weight: bold;
+}
+.toggle-btn {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  z-index: 999;
+  color: #333;
+}
+
+body.dark-mode {
+  background-color: #121212;
+  color: #f0f0f0;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+.dark-mode .experience_card {
+  background-color: #1e1e1e;
+  box-shadow: none;
+}
+.dark-mode .nav_items,
+.dark-mode .upper,
+.dark-mode .section-title,
+.dark-mode .experience_role,
+.dark-mode .experience_company,
+.dark-mode .about_text,
+.dark-mode .about_tex,
+.dark-mode .skill_name,
+.dark-mode .skill_percentage {
+  color: #f0f0f0;
+}
+
+.dark-mode header,
+.dark-mode nav {
+  background-color: #1a1a1a;
+}
+
+.dark-mode header *,
+.dark-mode nav * {
+  color: #ffffff !important;
+}
+
+
+.dark-mode .skill_bar {
+  background-color: #f70e0e;
+}
+
+
+
+

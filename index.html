@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+  
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -15,16 +16,23 @@
     />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
-  <body>
+  <body id="mainBody">
     <!-- Header Section -->
     <header class="header">
       <nav class="nav bd_grid">
         <div>
-          <a href="#" class="nav_logo">Abu Akash B</a>
+          <a href="#" class="nav_logo">Hi Mate 😄!</a>
         </div>
+        <script src="assets/js/darkmode.js"></script>
 
         <div class="nav_menu" id="nav_menu">
           <ul class="nav_list">
+            <button id="darkModeToggle" class="toggle-btn">
+              <i class='bx bx-moon' id="themeIcon"></i>
+            </button>
+
+           
+
             <li class="nav_items">
               <a href="#home" class="nav_link active">Home</a>
             </li>
@@ -35,12 +43,13 @@
               <a href="#skills" class="nav_link active">Skills</a>
             </li>
             <li class="nav_items">
-              <a href="#work" class="nav_link active">Internship</a>
+              <a href="#work" class="nav_link active">Experience</a>
             </li>
             <li class="nav_items">
               <a href="#contact" class="nav_link active">Mail Me</a>
             </li>
-            
+
+      
           
           </ul>
         </div>
@@ -50,14 +59,14 @@
         </div>
       </nav>
     </header>
-
+  
     <main class="main">
       <!-- HOME SECTION -->
       <section class="home bd_grid" id="home">
         <div class="home_data" data-aos="fade-down">
           <h1 class="home_title">
-            Hi, <br />I'm <span class="home_title-color">ABU AKASH B</span
-            ><br />Engineer Aspirant
+            <br />I'm <span class="home_title-color">ABU AKASH B</span
+            ><br />Software Developer
           </h1>
           <a href="mailto:akakash0460@gmail.com" class="button"> Contact</a>
         </div>
@@ -380,11 +389,8 @@
             >
               I'm Abu Akash B
             </h2>
-            <p class="about_tex" data-aos="fade-down" data-aos-delay="450">
-              An enthusiastic fresher with highly motivated and leadership skills pursuing bachelors of engineering degree in Electronics and communication Engineering.
-              Expert in implementation of each step of project.
-              Eager to learn new technologies and methodologies.
-              Always willing to innovate the new things which can improve the existing technology.
+            <p class="about_tex" style="text-align: justify;" data-aos="fade-down" data-aos-delay="450">
+              A motivated and fast-learning Software developer currently working at Geodis India Pvt. Ltd. with 1+ years of hands-on experience in building scalable web applications using Angular, .Net, C#, SQL, and Kafka. I play a key role in developing and maintaining the internal portal “Raptor,” while continuously upskilling in Azure and DevOps practices to expand my cloud and deployment capabilities.
             </p>
           </div>
         </div>
@@ -404,63 +410,63 @@
               Programming Languages
             </h2>
 
-            <!-- SKILLS HTML -->
+            <!-- SKILLS Angular -->
             <div class="skills_data" data-aos="fade-right">
               <div class="skills_name">
-                <i class="bx bxl-html5 skill_icon"></i>
-                <span class="skill_name">Html5</span>
+                <i class='bx  bxl-angular skill_icon'  ></i> 
+                <span class="skill_name">Angular</span>
               </div>
 
               <div><span class="skill_percentage">95%</span></div>
 
-              <div class="skill_bar skill_html"></div>
+              <div class="skill_bar skill_angular"></div>
             </div>
 
             <!-- SKILLS css -->
             <div class="skills_data" data-aos="fade-right" data-aos-delay="250">
               <div class="skills_name">
-                <i class="bx bxl-css3 skill_icon"></i>
-                <span class="skill_name">CSS3</span>
+                <i class='bx  bx-code skill_icon'  ></i> 
+                <span class="skill_name">.Net</span>
               </div>
 
               <div><span class="skill_percentage">85%</span></div>
 
-              <div class="skill_bar skill_css"></div>
+              <div class="skill_bar skill_net"></div>
             </div>
 
             <!-- SKILLS JS -->
             <div class="skills_data" data-aos="fade-right" data-aos-delay="250">
               <div class="skills_name">
-                <i class="bx bxl-javascript skill_icon"></i>
-                <span class="skill_name">JS</span>
-              </div>
-
-              <div><span class="skill_percentage">75%</span></div>
-
-              <div class="skill_bar skill_js"></div>
-            </div>
-            <!--PYTHON-->
-            <div class="skills_data" data-aos="fade-right" data-aos-delay="250">
-              <div class="skills_name">
-                <i class="bx bxl-python skill_icon"></i>
-                <span class="skill_name">Python</span>
+                <i class='bx bx-code-alt skill_icon'></i>
+                <span class="skill_name">C#</span>
               </div>
 
               <div><span class="skill_percentage">80%</span></div>
 
-              <div class="skill_bar skill_python"></div>
+              <div class="skill_bar skill_cs"></div>
+            </div>
+            <!--PYTHON-->
+            <div class="skills_data" data-aos="fade-right" data-aos-delay="250">
+              <div class="skills_name">
+                <i class='bx  bx-cloud skill_icon'  ></i> 
+                <span class="skill_name">Azure</span>
+              </div>
+
+              <div><span class="skill_percentage">80%</span></div>
+
+              <div class="skill_bar skill_azure"></div>
             </div>
 
             <!--JAVA-->
             <div class="skills_data" data-aos="fade-right" data-aos-delay="250">
               <div class="skills_name">
-                <i class="bx bxl-java skill_icon"></i> 
-                <span class="skill_name">JAVA</span>
+                <i class='bx  bxl-python skill_icon'  ></i> 
+                <span class="skill_name">Python</span>
               </div>
 
               <div><span class="skill_percentage">85%</span></div>
 
-              <div class="skill_bar skill_java"></div>
+              <div class="skill_bar skill_python"></div>
             </div>
             <br>
             <h2
@@ -527,61 +533,54 @@
       
       </section>
 
-      <!-- INTERNSHIP -->
+      <!-- Experience -->
       <section class="work section" id="work">
-        <h2 class="section-title" data-aos="fade-down">Internship</h2>
-        <h2
-              class="about_subtitle"
-              data-aos="fade-down"
-              data-aos-delay="350"
-            >
-            Trainee Intern at National Small Industries Corporation (NSIC)
-            </h2>
-            <p class="about_tex" data-aos="fade-down" data-aos-delay="450"><b>Guindy, Feb 2023 to Mar 2023</b></p><br>
-            
-            <p class="about_text" data-aos="fade-down" data-aos-delay="450" style="text-align:justify;" >
-              
-            During my internship at NSIC, I served as a dedicated and supportive intern in a fast-paced and dynamic environment. This experience allowed me to develop my technical skills and gain hands-on experience in the following areas:<br><br>
-
-              <b>PCB Design and Circuit Development:</b> I designed Printed Circuit Boards (PCBs) and basic circuits using Proteus Design Suite software. This involved schematic capture, layout design, and simulation, ensuring functional and efficient circuit designs.<br><br>
-
-              <b>IoT and Embedded Applications:</b> I contributed to a project focused on IoT and embedded systems. Utilizing my knowledge of C++ and the Arduino IDE, I developed applications that interfaced with hardware components and sensors, demonstrating practical applications of IoT technology.<br><br>
-
-              This internship was a valuable opportunity to apply my theoretical knowledge in a practical setting, enhancing my understanding of electronics and communication engineering principles. It also honed my problem-solving skills and ability to work effectively in a team-oriented environment.
-             
-            </p>
-        <br>
-        <br>
-        <div
-          class="work_container bd_grid"
-          data-aos="fade-down"
-          data-aos-delay="250"
-        >
-          <div class="work_img">
-            <img src="./assets/img/work1.jpg" alt="" />
+        <h2 class="section-title" data-aos="fade-down">Experience</h2>
+      
+        <!-- Experience Card: Geodis -->
+        <div class="experience_card" data-aos="fade-up" data-aos-delay="150">
+          <div class="experience_header">
+            <i class='bx bx-code-block'></i>
+            <div>
+              <h3 class="experience_role">Associate Developer</h3>
+              <span class="experience_company">Geodis India Pvt. Ltd.</span>
+              <p class="experience_duration">📍 Chennai — Sep 2024 to Present</p>
+            </div>
           </div>
-
-          <div class="work_img">
-            <img src="./assets/img/work2.jpg" alt="" />
+          <div class="experience_content">
+            <ul>
+              <li>⚙️ Developed & maintained scalable web components using <b>Angular</b> and <b>TypeScript</b>.</li>
+              <li>🧠 Built backend logic with <b>C#, .NET, SQL Server</b>.</li>
+              <li>🔍 Collaborated with QA and design teams for optimized UI/UX delivery.</li>
+              <li>📊 Led a POC to monitor <b>Kafka</b> using <b>Prometheus</b>, <b>Grafana</b>, and <b>Docker</b>.</li>
+              <li>☁️ Built centralized error logging with <b>Azure Monitor</b>, <b>Application Insights</b>, and <b>Log Analytics</b>.</li>
+              <li>🚀 Learning DevOps: Azure CI/CD, deployments, and cloud migration strategies.</li>
+            </ul>
+            <p class="tech_used"><b>Tech Stack:</b> Angular, TypeScript, C#, SQL Server, Kafka, Docker, Prometheus, Grafana, Azure, Git</p>
           </div>
-
-          <div class="work_img">
-            <img src="./assets/img/work3.jpg" alt="" />
+        </div>
+      
+        <!-- Experience Card: NSIC -->
+        <div class="experience_card" data-aos="fade-up" data-aos-delay="300">
+          <div class="experience_header">
+            <i class='bx bx-chip'></i>
+            <div>
+              <h3 class="experience_role">Trainee Intern</h3>
+              <span class="experience_company">National Small Industries Corporation (NSIC)</span>
+              <p class="experience_duration">📍 Guindy — Feb 2023 to Mar 2023</p>
+            </div>
           </div>
-
-          <div class="work_img">
-            <img src="./assets/img/work4.jpg" alt="" />
-          </div>
-
-          <div class="work_img">
-            <img src="./assets/img/work5.jpg" alt="" />
-          </div>
-
-          <div class="work_img">
-            <img src="./assets/img/work6.jpg" alt="" />
+          <div class="experience_content">
+            <ul>
+              <li>🔧 Designed PCBs & circuits using <b>Proteus Design Suite</b>.</li>
+              <li>📡 Built IoT applications using <b>C++</b> and <b>Arduino IDE</b>.</li>
+              <li>🧪 Gained practical exposure to embedded systems and electronics principles.</li>
+              <li>🤝 Strengthened problem-solving and collaboration skills in a technical team environment.</li>
+            </ul>
           </div>
         </div>
       </section>
+      
 
       <!-- CONTACT SECTION -->
 
@@ -629,7 +628,7 @@
 
       <!-- Footer Section -->
       <footer class="footer">
-        <a href="https://drive.google.com/file/d/1Myj0SPpqmo0T3eFKIjPBnRyHhL_n1kJ7/view?usp=share_link" class="button"> Download Resume</a>
+       <!-- <a href="https://drive.google.com/file/d/1Myj0SPpqmo0T3eFKIjPBnRyHhL_n1kJ7/view?usp=share_link" class="button"> Download Resume</a> -->
         <br>
         <div class="footer_socials">
           <br>
@@ -638,8 +637,7 @@
             class="footer_icon"
             data-aos="fade-down"
             data-aos-delay="250"
-            ><i class="bx bxl-linkedin"></i
-          ></a>
+            ><i class='bxl  bx-linkedin'  ></i>  </a>
           <a
             href="https://www.instagram.com/ak__ak.ash01/"
             class="footer_icon"
@@ -658,7 +656,7 @@
 
         <p data-aos="fade-down" data-aos-delay="650">
         </p>
-        <p>&#169; 2024 Allright reserved</p>
+        <!-- <p>&#169; 2024 Allright reserved</p> -->
       </footer>
     </main>
 
@@ -671,5 +669,6 @@
         once: false,
       });
     </script>
-  </body>
+
+</body>
 </html>
